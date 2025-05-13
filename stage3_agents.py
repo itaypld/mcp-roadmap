@@ -1,14 +1,22 @@
 import os
 from openai import OpenAI
 from dotenv import load_dotenv
+import re
 
 load_dotenv()
 client = OpenAI(api_key=os.getenv("OPENAI_API_KEY"))
-
+def calculator_tool(expression: str) -> str:
+    """Evaluates simple math expressions like '2 + 2' or '5 * (3 + 2)'."""
+    try:
+        result = eval(expression, {"__builtins__": {}})#restricting built-ins for security
+        return f"Result: {result}"
+    except Exception as e:
+        return f"Error evaluating expression: {e}"
+    
 def plan_tasks(goal: str) -> list:
     """Planner agent: breaks down a high-level goal into subtasks."""
     messages = [
-        {"role": "system", "content": "You are a project planner. Break down the user's goal into 3 clear research subtasks."},
+        {"role": "system", "content": "You are a project planner. Return only a numbered list of 3 clear, concise research subtasks. Do not include any headings, preamble, or extra commentary. Each subtask should be a complete sentence and directly actionable."},
         {"role": "user", "content": f"My goal: {goal}"}
     ]
     response = client.chat.completions.create(
@@ -25,6 +33,12 @@ def execute_task(task: str) -> str:
         {"role": "system", "content": "You are a helpful research assistant."},
         {"role": "user", "content": f"Please complete the following task: {task}"}
     ]
+    if "calculate" in task.lower() or "what is" in task.lower():
+        # Try to extract a math expression from the task
+        match = re.search(r'[\d\s\+\-\*/\(\)\.]+', task)
+        if match:
+            expr = match.group()
+            return calculator_tool(expr)
     response = client.chat.completions.create(
         model="gpt-3.5-turbo",
         messages=messages,
@@ -68,7 +82,7 @@ if __name__ == "__main__":
     executer_log = []
     print("\n🔍 Executing Tasks:\n")
     for i, task in enumerate(tasks, start=1):
-        if not task.strip():
+        if not task.strip() or len(task.split()) < 4:
             continue
         print(f"Task {i}: {task}")
         result = execute_task(task)
