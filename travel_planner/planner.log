@@ -1,0 +1,11 @@
+2025-05-14 16:13:59,495 [INFO] [planner] Received goal: 5-day cultural trip to Japan
+2025-05-14 16:14:04,416 [INFO] HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-05-14 16:14:04,440 [INFO] [planner] Generated steps: ['Great! Here are 5 specific planning steps for your 5-day cultural trip to Japan:', '', '1. Research and decide on the specific cities or regions in Japan you want to visit based on your cultural interests, such as Tokyo for modern city life, Kyoto for historical temples and gardens, or Osaka for traditional cuisine.', ' ', '2. Create a detailed itinerary outlining the activities you want to do in each location, considering key cultural attractions like shrines, museums, traditional performances, and local shopping districts.', '', "3. Book your accommodations in advance to ensure you secure the best locations and rates for your stay, whether it's traditional ryokans, modern hotels, or budget hostels.", '', '4. Check transportation options between cities, such as trains, buses, or domestic flights, and make necessary reservations to optimize your travel time and experience.', '', '5. Research and prepare for any cultural norms, etiquettes, or local practices you should be aware of during your trip to Japan to ensure a respectful and immersive experience.']
+2025-05-14 18:30:59,325 [INFO] [planner] Received goal: 5-day cultural trip to Japan
+2025-05-14 18:31:01,693 [INFO] HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-05-14 18:31:01,700 [INFO] [planner] Generated steps: [
+'1. Research cultural attractions in Japan such as temples, gardens, museums, and traditional festivals.',
+'2. Decide on the specific cities or regions in Japan to visit based on cultural interests, such as Tokyo, Kyoto, Osaka, or Hiroshima.', 
+'3. Plan an itinerary including specific activities, sights, and restaurants to visit each day of the 5-day trip.', 
+'4. Make travel arrangements including booking flights, accommodations, and transportation within Japan.', 
+'5. Prepare necessary travel documents such as passports, visas, and any required reservations for attractions or events in Japan.']
