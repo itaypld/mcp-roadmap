@@ -92,7 +92,6 @@ travel_planner/
 ---
 
 ## 🔮 Next Goals
-
 - Add validator agent to check output consistency
 - Introduce tool routing for real-time APIs (e.g., flight data)
 - Add persistent memory or caching layer

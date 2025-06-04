@@ -1,0 +1,80 @@
+2025-05-28 10:37:39,303 [INFO] [planner] Received goal: 5-day cultural trip to Japan
+2025-05-28 10:37:41,602 [INFO] HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-05-28 10:37:41,608 [INFO] [planner] Generated steps: ['[', '    {"tool": "executor", "input": "Research popular cultural attractions in Japan"},', '    {"tool": "executor", "input": "Plan itinerary for 5 days including visits to museums, temples, and cultural events"},', '    {"tool": "executor", "input": "Book flights to Japan"},', '    {"tool": "executor", "input": "Book accommodations for 5 nights in Japan"},', '    {"tool": "executor", "input": "Learn some basic Japanese phrases for communication"},', '    {"tool": "executor", "input": "Pack appropriate clothing and items for the trip"},', '    {"tool": "executor", "input": "Exchange currency to Japanese Yen before the trip"}', ']']
+2025-05-28 10:37:41,609 [ERROR] [planner] Error while calling OpenAI: 9 validation errors for PlanningResponse
+steps.0
+  Input should be a valid dictionary or instance of PlanningStep [type=model_type, input_value='[', input_type=str]
+    For further information visit https://errors.pydantic.dev/2.11/v/model_type
+steps.1
+  Input should be a valid dictionary or instance of PlanningStep [type=model_type, input_value='    {"tool": "executor",...attractions in Japan"},', input_type=str]
+    For further information visit https://errors.pydantic.dev/2.11/v/model_type
+steps.2
+  Input should be a valid dictionary or instance of PlanningStep [type=model_type, input_value='    {"tool": "executor",... and cultural events"},', input_type=str]
+    For further information visit https://errors.pydantic.dev/2.11/v/model_type
+steps.3
+  Input should be a valid dictionary or instance of PlanningStep [type=model_type, input_value='    {"tool": "executor",...ook flights to Japan"},', input_type=str]
+    For further information visit https://errors.pydantic.dev/2.11/v/model_type
+steps.4
+  Input should be a valid dictionary or instance of PlanningStep [type=model_type, input_value='    {"tool": "executor",...or 5 nights in Japan"},', input_type=str]
+    For further information visit https://errors.pydantic.dev/2.11/v/model_type
+steps.5
+  Input should be a valid dictionary or instance of PlanningStep [type=model_type, input_value='    {"tool": "executor",...es for communication"},', input_type=str]
+    For further information visit https://errors.pydantic.dev/2.11/v/model_type
+steps.6
+  Input should be a valid dictionary or instance of PlanningStep [type=model_type, input_value='    {"tool": "executor",...d items for the trip"},', input_type=str]
+    For further information visit https://errors.pydantic.dev/2.11/v/model_type
+steps.7
+  Input should be a valid dictionary or instance of PlanningStep [type=model_type, input_value='    {"tool": "executor",...e Yen before the trip"}', input_type=str]
+    For further information visit https://errors.pydantic.dev/2.11/v/model_type
+steps.8
+  Input should be a valid dictionary or instance of PlanningStep [type=model_type, input_value=']', input_type=str]
+    For further information visit https://errors.pydantic.dev/2.11/v/model_type
+2025-05-28 10:40:03,251 [INFO] [planner] Received goal: 5-day cultural trip to Japan
+2025-05-28 10:40:04,293 [INFO] HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-05-28 10:40:04,295 [INFO] [planner] Generated steps: []
+2025-05-28 10:41:54,062 [INFO] [planner] Received goal: 5-day cultural trip to Japan
+2025-05-28 10:41:55,914 [INFO] HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-05-28 10:41:55,917 [INFO] [planner] Generated steps: [{'tool': 'executor', 'input': 'Research popular cultural destinations in Japan'}, {'tool': 'executor', 'input': 'Book flights to Japan'}, {'tool': 'executor', 'input': 'Book accommodations for 5 days in Japan'}, {'tool': 'executor', 'input': 'Plan daily cultural activities and sightseeing tours'}, {'tool': 'executor', 'input': 'Learn basic Japanese phrases for communication'}]
+2025-05-28 10:50:09,620 [INFO] [planner] Received goal: 5-day cultural trip to Japan
+2025-05-28 10:50:12,332 [INFO] HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-05-28 10:50:12,335 [INFO] [planner] Generated steps: [{'tool': 'executor', 'input': 'Research cultural landmarks in Japan'}, {'tool': 'executor', 'input': 'Plan itinerary for 5 days in Japan including visits to museums, temples, and traditional villages'}, {'tool': 'executor', 'input': 'Book flights to Japan'}, {'tool': 'executor', 'input': 'Book accommodations in Japan for 5 nights'}, {'tool': 'executor', 'input': 'Arrange for local transportation within Japan'}, {'tool': 'executor', 'input': 'Learn basic Japanese phrases for communication'}]
+2025-06-03 20:10:18,095 [INFO] [planner] Received goal: 5-day cultural trip to Japan
+2025-06-03 20:10:21,037 [INFO] HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-06-03 20:10:21,041 [INFO] [planner] Generated steps: [{'tool': 'executor', 'input': 'Research popular cultural attractions in Japan'}, {'tool': 'executor', 'input': 'Plan itinerary for 5 days including visits to cultural sites, museums, and traditional performances'}, {'tool': 'executor', 'input': 'Book accommodations in different cities for each day of the trip'}, {'tool': 'executor', 'input': 'Arrange transportation between cities and within cities during the trip'}]
+2025-06-03 20:14:24,161 [INFO] [planner] Received goal: 5-day cultural trip to Japan
+2025-06-03 20:14:26,152 [INFO] HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-06-03 20:14:26,154 [INFO] [planner] Generated steps: [{'tool': 'executor', 'input': 'Research popular cultural attractions in Japan'}, {'tool': 'executor', 'input': 'Find and book accommodations for a 5-day stay in Japan'}, {'tool': 'executor', 'input': 'Look for local traditional restaurants and food experiences in Japan'}, {'tool': 'executor', 'input': 'Check cultural events or festivals happening during the planned travel dates in Japan'}, {'tool': 'executor', 'input': 'Research transportation options within Japan for efficient travel between attractions'}]
+2025-06-03 20:41:12,010 [INFO] [planner] Received goal: 5-day cultural trip to Japan
+2025-06-03 20:41:14,500 [INFO] HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-06-03 20:41:14,503 [INFO] [planner] Generated steps: [{'tool': 'executor', 'input': 'Research popular cultural destinations in Japan'}, {'tool': 'executor', 'input': 'Book flights to Japan'}, {'tool': 'executor', 'input': 'Book accommodations for 5 nights in Japan'}, {'tool': 'executor', 'input': 'Plan daily itinerary including visits to museums, temples, and other cultural sites'}]
+2025-06-04 12:34:53,680 [INFO] [planner] Received goal: 5-day cultural trip to Japan
+2025-06-04 12:34:58,312 [INFO] HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-06-04 12:34:58,316 [INFO] [planner] Generated steps: [{'tool': 'find_flights', 'input': {'origin': 'New York', 'destination': 'Japan', 'depart_date': '2023-04-15', 'return_date': '2023-04-20', 'passengers': 1}}, {'tool': 'find_hotels', 'input': {'location': 'Japan', 'check_in': '2023-04-15', 'check_out': '2023-04-20', 'guests': 1}}, {'tool': 'list_events', 'input': {'location': 'Japan', 'month': 'April'}}, {'tool': 'get_transport_options', 'input': {'location': 'Japan'}}]
+2025-06-04 12:34:58,317 [ERROR] [planner] Error while calling OpenAI: 4 validation errors for PlanningResponse
+steps.0.input
+  Input should be a valid string [type=string_type, input_value={'origin': 'New York', 'd...04-20', 'passengers': 1}, input_type=dict]
+    For further information visit https://errors.pydantic.dev/2.11/v/string_type
+steps.1.input
+  Input should be a valid string [type=string_type, input_value={'location': 'Japan', 'ch...023-04-20', 'guests': 1}, input_type=dict]
+    For further information visit https://errors.pydantic.dev/2.11/v/string_type
+steps.2.input
+  Input should be a valid string [type=string_type, input_value={'location': 'Japan', 'month': 'April'}, input_type=dict]
+    For further information visit https://errors.pydantic.dev/2.11/v/string_type
+steps.3.input
+  Input should be a valid string [type=string_type, input_value={'location': 'Japan'}, input_type=dict]
+    For further information visit https://errors.pydantic.dev/2.11/v/string_type
+2025-06-04 12:43:26,445 [INFO] [planner] Received goal: 5-day cultural trip to Japan
+2025-06-04 12:43:29,270 [INFO] HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-06-04 12:43:29,274 [INFO] [planner] Generated steps: [{'tool': 'find_flights', 'input': {'origin': 'New York', 'destination': 'Tokyo', 'depart_date': '2023-03-01', 'return_date': '2023-03-06', 'passengers': 1}}, {'tool': 'find_hotels', 'input': {'location': 'Tokyo', 'check_in': '2023-03-01', 'check_out': '2023-03-06', 'guests': 1}}, {'tool': 'list_events', 'input': {'location': 'Tokyo', 'month': 'March'}}, {'tool': 'get_transport_options', 'input': {'location': 'Tokyo'}}]
+2025-06-04 12:45:01,319 [INFO] [planner] Received goal: 5-day cultural trip to Japan
+2025-06-04 12:45:04,928 [INFO] HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-06-04 12:45:04,929 [INFO] [planner] Generated steps: [{'tool': 'find_flights', 'input': {'origin': 'New York', 'destination': 'Japan', 'depart_date': '2023-07-15', 'return_date': '2023-07-20', 'passengers': 1}}, {'tool': 'find_hotels', 'input': {'location': 'Japan', 'check_in': '2023-07-15', 'check_out': '2023-07-20', 'guests': 1}}, {'tool': 'list_events', 'input': {'location': 'Japan', 'month': 'July'}}, {'tool': 'get_transport_options', 'input': {'location': 'Japan'}}]
+2025-06-04 12:51:05,497 [INFO] [planner] Received goal: 5-day cultural trip to Japan
+2025-06-04 12:51:08,139 [INFO] HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-06-04 12:51:08,143 [INFO] [planner] Generated steps: [{'tool': 'find_flights', 'input': {'origin': 'your current location', 'destination': 'Japan', 'depart_date': 'yyyy-mm-dd', 'return_date': 'yyyy-mm-dd', 'passengers': 1}}, {'tool': 'find_hotels', 'input': {'location': 'Japan', 'check_in': 'yyyy-mm-dd', 'check_out': 'yyyy-mm-dd', 'guests': 1}}]
+2025-06-04 14:10:17,434 [INFO] [planner] Received goal: 5-day cultural trip to Japan
+2025-06-04 14:10:19,850 [INFO] HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-06-04 14:10:19,857 [INFO] [planner] Generated steps: [{'tool': 'find_flights', 'input': {'origin': 'New York', 'destination': 'Tokyo', 'depart_date': '2023-05-15', 'return_date': '2023-05-20', 'passengers': 1}}, {'tool': 'find_hotels', 'input': {'location': 'Tokyo', 'check_in': '2023-05-15', 'check_out': '2023-05-20', 'guests': 1}}, {'tool': 'list_events', 'input': {'location': 'Tokyo', 'month': 'May'}}, {'tool': 'get_transport_options', 'input': {'location': 'Tokyo'}}]
+2025-06-04 14:12:04,216 [INFO] [planner] Received goal: 5-day cultural trip to Japan
+2025-06-04 14:12:06,621 [INFO] HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-06-04 14:12:06,623 [INFO] [planner] Generated steps: [{'tool': 'find_flights', 'input': {'origin': 'Los Angeles', 'destination': 'Tokyo', 'depart_date': '2023-08-15', 'return_date': '2023-08-20', 'passengers': 1}}, {'tool': 'find_hotels', 'input': {'location': 'Tokyo', 'check_in': '2023-08-15', 'check_out': '2023-08-20', 'guests': 1}}]
